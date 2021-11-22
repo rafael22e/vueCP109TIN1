@@ -10,15 +10,11 @@
       <v-icon>mdi-battery</v-icon>
       <span>12:30</span>
     </v-system-bar>
-    <br>
   </div>
 </template>
 
 <script>
-
   export default  {
-    name: 'System-bar',
+    name: 'SystemBar',
 }
-
-
 </script>

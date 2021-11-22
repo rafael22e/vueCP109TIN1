@@ -1,20 +1,30 @@
 <template>
-  <div class="home">
-    <SystemBar/>
+<div>
+  <SystemBar/>
+  <AppBar/>
+  <div class="col-md-3">
+    <NavigationDrawer/>
   </div>
+  <Footer/>
+  <BottomNavigation/>
+</div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
 import SystemBar from '@/components/SystemBar.vue'
+import AppBar from '../components/AppBar.vue'
+import BottomNavigation from '../components/BottomNavigation.vue'
+import Footer from '../components/Footer.vue'
+import NavigationDrawer from '../components/NavigationDrawer.vue'
 
+  export default {
+    name: 'Home',
 
-export default {
-  name: 'Home',
-  components: {
-    // HelloWorld,
-    SystemBar
+    components: {
+      SystemBar,
+      AppBar,
+      BottomNavigation,
+      NavigationDrawer,
+      Footer },
   }
-}
 </script>
