@@ -5,7 +5,7 @@
       dense
       dark
     >
-      <v-toolbar-title>Aplicação VUE</v-toolbar-title>
+      <v-toolbar-title>{{title}}</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -48,5 +48,11 @@
 <script>
   export default  {
     name: 'AppBar',
+
+    data(){
+      return{
+        title: this.$store.state.titlePage
+      }
+    }
 }
 </script>
